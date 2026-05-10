@@ -1,0 +1,3 @@
+Hermes GitHub deployment check for Garuda Logistik.
+Repository: vicdhika779/garuda-logistik-website
+Live domain: garudalogistik.com
