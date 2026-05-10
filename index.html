@@ -105,6 +105,7 @@
       align-items: center;
       justify-content: space-between;
       height: 64px;
+      position: relative;
     }
 
     .brand {
@@ -176,6 +177,24 @@
       background: var(--red-dark);
       transform: translateY(-1px);
       box-shadow: 0 4px 12px rgba(185,28,28,.30);
+    }
+
+    /* ── MOBILE NAV TOGGLE ── */
+    .nav-toggle {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0.4rem;
+      color: var(--gray-700);
+      border-radius: 6px;
+      transition: color 0.2s, background 0.2s;
+      margin-left: auto;
+    }
+
+    .nav-toggle:hover {
+      color: var(--red);
+      background: rgba(185,28,28,0.06);
     }
 
     /* ── HERO ── */
@@ -558,7 +577,50 @@
     }
 
     @media (max-width: 640px) {
-      .nav-links { display: none; }
+      .nav-toggle { display: flex; align-items: center; }
+
+      nav {
+        position: absolute;
+        top: 64px;
+        left: 0;
+        right: 0;
+        background: var(--white);
+        border-top: 1px solid var(--gray-200);
+        border-bottom: 1px solid var(--gray-200);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        z-index: 99;
+        display: none;
+      }
+
+      nav.open { display: block; }
+
+      nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        padding: 0.75rem 1.25rem;
+      }
+
+      nav ul li { width: 100%; }
+
+      nav a, nav li {
+        display: block;
+        padding: 0.65rem 0;
+        font-size: 0.95rem;
+        border-bottom: 1px solid var(--gray-100);
+        width: 100%;
+      }
+
+      nav li:last-child a { border-bottom: none; }
+
+      .btn-header {
+        display: block;
+        text-align: center;
+        margin-top: 0.5rem;
+        padding: 0.6rem 1.2rem;
+        width: 100%;
+      }
+
       section { padding: 3.5rem 1.25rem; }
       .hero { padding: 7rem 1.25rem 3.5rem; }
       .hero h1 { font-size: 1.85rem; }
@@ -595,6 +657,13 @@
           <li><a href="https://wa.me/6281277797979" class="btn-header" target="_blank" rel="noopener">Hubungi Kami</a></li>
         </ul>
       </nav>
+      <button class="nav-toggle" aria-label="Buka menu" onclick="this.classList.toggle('active'); document.querySelector('nav').classList.toggle('open')">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+          <line class="bar1" x1="3" y1="6" x2="21" y2="6"/>
+          <line class="bar2" x1="3" y1="12" x2="21" y2="12"/>
+          <line class="bar3" x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
     </div>
   </header>
 
