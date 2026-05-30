@@ -3,836 +3,1127 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Garuda Logistik — Solusi Logistik Terpercaya untuk Bisnis Anda</title>
-  <meta name="description" content="Garuda Logistik menyediakan layanan pengiriman barang, cargo, trucking, dan solusi logistik bisnis yang andal untuk UMKM, distributor, dan toko online di Indonesia.">
-  <link rel="icon" type="image/png" href="assets/brand/garuda-logistik-logo.png">
-  <link rel="apple-touch-icon" href="assets/brand/garuda-logistik-logo.png">
+  <title>Garuda Logistik — Solusi Logistik Bisnis Indonesia</title>
+  <meta name="description" content="Garuda Logistik menyediakan pengiriman barang, cargo, trucking, dan distribusi bisnis yang rapi, transparan, dan terpercaya untuk pelanggan di Indonesia.">
+  <link rel="icon" type="image/png" href="assets/brand/garuda-logistik-emblem.png">
+  <link rel="apple-touch-icon" href="assets/brand/garuda-logistik-emblem.png">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Garuda Logistik — Solusi Logistik Terpercaya untuk Bisnis Anda">
-  <meta property="og:description" content="Garuda Logistik menyediakan layanan pengiriman barang, cargo, trucking, dan solusi logistik bisnis yang andal untuk UMKM, distributor, dan toko online di Indonesia.">
+  <meta property="og:title" content="Garuda Logistik — Solusi Logistik Bisnis Indonesia">
+  <meta property="og:description" content="Pengiriman barang, cargo, trucking, dan distribusi bisnis yang rapi, transparan, dan terpercaya.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://garudalogistik.com">
-  <meta property="og:image" content="https://garudalogistik.com/assets/brand/garuda-logistik-logo.png">
+  <meta property="og:image" content="https://garudalogistik.com/assets/brand/garuda-logistik-emblem.png">
 
-  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Garuda Logistik — Solusi Logistik Terpercaya untuk Bisnis Anda">
-  <meta name="twitter:description" content="Garuda Logistik menyediakan layanan pengiriman barang, cargo, trucking, dan solusi logistik bisnis yang andal untuk UMKM, distributor, dan toko online di Indonesia.">
-  <meta name="twitter:image" content="https://garudalogistik.com/assets/brand/garuda-logistik-logo.png">
+  <meta name="twitter:title" content="Garuda Logistik — Solusi Logistik Bisnis Indonesia">
+  <meta name="twitter:description" content="Pengiriman barang, cargo, trucking, dan distribusi bisnis yang rapi, transparan, dan terpercaya.">
+  <meta name="twitter:image" content="https://garudalogistik.com/assets/brand/garuda-logistik-emblem.png">
+
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --red:       #b91c1c;
-      --red-dark:  #991b1b;
-      --red-light: #dc2626;
-      --gold:      #d4a017;
-      --gold-light:#e6b422;
-      --white:     #ffffff;
-      --off-white: #f9fafb;
-      --gray-50:   #f9fafb;
-      --gray-100:  #f3f4f6;
-      --gray-200:  #e5e7eb;
-      --gray-300:  #d1d5db;
-      --gray-500:  #6b7280;
-      --gray-700:  #374151;
-      --gray-900:  #111827;
-      --shadow-sm: 0 1px 3px rgba(0,0,0,.08), 0 1px 2px rgba(0,0,0,.06);
-      --shadow-md: 0 4px 12px rgba(0,0,0,.08), 0 2px 4px rgba(0,0,0,.05);
-      --shadow-lg: 0 10px 30px rgba(0,0,0,.10), 0 4px 8px rgba(0,0,0,.06);
+      --ink: #090b10;
+      --navy: #101722;
+      --navy-2: #151f2e;
+      --cream: #f6f1e8;
+      --paper: #fffaf0;
+      --white: #ffffff;
+      --muted: #667085;
+      --muted-dark: #aeb7c5;
+      --line: rgba(15, 23, 42, .12);
+      --line-light: rgba(255, 255, 255, .14);
+      --gold: #d9a441;
+      --gold-light: #f3d285;
+      --gold-dark: #9c6a19;
+      --red: #ba161c;
+      --red-dark: #8f1015;
+      --green: #10b981;
+      --shadow-soft: 0 22px 70px rgba(5, 12, 22, .16);
+      --shadow-gold: 0 18px 45px rgba(217, 164, 65, .18);
+      --radius-lg: 28px;
+      --radius-md: 18px;
+      --radius-sm: 12px;
+      --container: 1180px;
     }
 
     html { scroll-behavior: smooth; }
 
     body {
-      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-      color: var(--gray-700);
-      background: var(--white);
-      line-height: 1.65;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.6;
+      overflow-x: hidden;
     }
 
-    a { text-decoration: none; }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background:
+        radial-gradient(circle at 18% 10%, rgba(217,164,65,.16), transparent 30%),
+        radial-gradient(circle at 88% 0%, rgba(186,22,28,.09), transparent 28%),
+        linear-gradient(180deg, rgba(255,255,255,.70), transparent 38%);
+      z-index: -2;
+    }
 
-    /* ── UTILITY ── */
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: .035;
+      background-image: linear-gradient(var(--ink) 1px, transparent 1px), linear-gradient(90deg, var(--ink) 1px, transparent 1px);
+      background-size: 42px 42px;
+      z-index: -1;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+
     .container {
-      max-width: 1100px;
+      width: min(var(--container), calc(100% - 40px));
       margin: 0 auto;
-      padding: 0 1.5rem;
     }
 
-    .section-label {
-      display: inline-block;
-      font-size: 0.75rem;
-      font-weight: 700;
-      letter-spacing: 0.12em;
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: .55rem;
+      color: var(--gold-dark);
+      font-size: .74rem;
+      font-weight: 800;
+      letter-spacing: .16em;
       text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 0.6rem;
+      margin-bottom: .95rem;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 32px;
+      height: 1px;
+      background: currentColor;
     }
 
     .section-title {
-      font-size: clamp(1.7rem, 3.5vw, 2.2rem);
-      font-weight: 800;
-      color: var(--gray-900);
-      line-height: 1.2;
-      margin-bottom: 0.8rem;
+      max-width: 760px;
+      color: var(--ink);
+      font-size: clamp(2.05rem, 4vw, 3.6rem);
+      line-height: 1.03;
+      letter-spacing: -.055em;
+      font-weight: 850;
+      text-wrap: balance;
     }
 
     .section-sub {
-      font-size: 1rem;
-      color: var(--gray-500);
-      max-width: 540px;
-      line-height: 1.75;
+      max-width: 650px;
+      margin-top: 1rem;
+      color: var(--muted);
+      font-size: 1.03rem;
+      line-height: 1.85;
     }
 
-    /* ── HEADER / NAV ── */
+    /* Header */
     header {
       position: fixed;
-      top: 0; left: 0; right: 0;
-      z-index: 100;
-      background: rgba(255,255,255,0.97);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid var(--gray-200);
-      box-shadow: 0 1px 4px rgba(0,0,0,.05);
+      z-index: 50;
+      top: 18px;
+      left: 0;
+      right: 0;
+      pointer-events: none;
     }
 
     .header-inner {
-      max-width: 1100px;
+      width: min(var(--container), calc(100% - 32px));
       margin: 0 auto;
-      padding: 0 1.5rem;
+      min-height: 70px;
+      padding: .65rem .8rem .65rem .9rem;
+      border: 1px solid rgba(255,255,255,.70);
+      border-radius: 999px;
+      background: rgba(255, 250, 240, .86);
+      backdrop-filter: blur(18px) saturate(150%);
+      box-shadow: 0 12px 38px rgba(15, 23, 42, .12);
       display: flex;
       align-items: center;
       justify-content: space-between;
-      height: 64px;
-      position: relative;
+      gap: 1.2rem;
+      pointer-events: auto;
     }
 
     .brand {
       display: flex;
       align-items: center;
-      gap: 0.75rem;
-      text-decoration: none;
+      gap: .78rem;
+      min-width: 0;
     }
 
     .brand-logo {
-      height: 44px;
-      width: auto;
-      max-height: 44px;
+      width: 48px;
+      height: 48px;
       object-fit: contain;
-      flex-shrink: 0;
-    }
-
-    .brand-text {
-      display: flex;
-      flex-direction: column;
-      line-height: 1.15;
+      filter: drop-shadow(0 5px 10px rgba(0,0,0,.20));
+      flex: 0 0 auto;
     }
 
     .brand-name {
-      font-size: 1.15rem;
+      color: var(--ink);
+      font-size: 1.05rem;
       font-weight: 900;
-      color: var(--gray-900);
-      letter-spacing: -0.01em;
+      line-height: 1.05;
+      letter-spacing: -.02em;
+      white-space: nowrap;
     }
 
     .brand-name span { color: var(--red); }
 
     .brand-tagline {
-      font-size: 0.68rem;
-      font-weight: 500;
-      color: var(--gray-500);
-      letter-spacing: 0.01em;
+      margin-top: .15rem;
+      color: var(--muted);
+      font-size: .68rem;
+      font-weight: 650;
       white-space: nowrap;
     }
 
     nav ul {
       display: flex;
       align-items: center;
-      gap: 2rem;
+      gap: .35rem;
       list-style: none;
     }
 
     nav a {
-      font-size: 0.88rem;
-      font-weight: 600;
-      color: var(--gray-700);
-      transition: color 0.2s;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 42px;
+      padding: 0 .95rem;
+      border-radius: 999px;
+      color: #273142;
+      font-size: .88rem;
+      font-weight: 720;
+      transition: background .2s ease, color .2s ease, transform .2s ease;
     }
 
-    nav a:hover { color: var(--red); }
+    nav a:hover { background: rgba(217, 164, 65, .14); color: var(--ink); }
 
     .btn-header {
-      background: var(--red);
+      margin-left: .25rem;
       color: var(--white) !important;
-      padding: 0.45rem 1.2rem;
-      border-radius: 6px;
-      font-size: 0.85rem !important;
-      font-weight: 700 !important;
-      transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
-      box-shadow: 0 2px 8px rgba(185,28,28,.25);
+      background: var(--ink);
+      box-shadow: 0 10px 24px rgba(9, 11, 16, .20);
     }
 
-    .btn-header:hover {
-      background: var(--red-dark);
-      transform: translateY(-1px);
-      box-shadow: 0 4px 12px rgba(185,28,28,.30);
-    }
+    .btn-header:hover { background: var(--red); transform: translateY(-1px); }
 
-    /* ── MOBILE NAV TOGGLE ── */
     .nav-toggle {
       display: none;
-      background: none;
-      border: none;
+      width: 44px;
+      height: 44px;
+      align-items: center;
+      justify-content: center;
+      border: 0;
+      border-radius: 999px;
+      color: var(--ink);
+      background: rgba(9,11,16,.07);
       cursor: pointer;
-      padding: 0.4rem;
-      color: var(--gray-700);
-      border-radius: 6px;
-      transition: color 0.2s, background 0.2s;
-      margin-left: auto;
     }
 
-    .nav-toggle:hover {
-      color: var(--red);
-      background: rgba(185,28,28,0.06);
-    }
-
-    /* ── HERO ── */
+    /* Hero */
     .hero {
-      padding: 8rem 1.5rem 5rem;
-      background: var(--white);
+      position: relative;
+      min-height: 760px;
+      padding: 9.4rem 0 5.8rem;
+      overflow: hidden;
+      background:
+        linear-gradient(118deg, rgba(255,250,240,.97) 0%, rgba(255,250,240,.92) 54%, rgba(16,23,34,.96) 54.2%, rgba(9,11,16,.98) 100%);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      right: -160px;
+      top: -160px;
+      width: 640px;
+      height: 640px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(217,164,65,.30), transparent 62%);
+      filter: blur(2px);
+      pointer-events: none;
     }
 
     .hero-inner {
-      max-width: 1100px;
+      position: relative;
+      z-index: 1;
+      width: min(var(--container), calc(100% - 40px));
       margin: 0 auto;
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4rem;
+      grid-template-columns: minmax(0, 1.02fr) minmax(420px, .98fr);
+      gap: 4.5rem;
       align-items: center;
     }
 
     .hero-badge {
+      width: fit-content;
       display: inline-flex;
       align-items: center;
-      gap: 0.4rem;
-      background: rgba(212,160,23,0.1);
-      border: 1px solid rgba(212,160,23,0.35);
-      color: var(--gold);
-      font-size: 0.75rem;
-      font-weight: 700;
-      letter-spacing: 0.1em;
+      gap: .65rem;
+      padding: .52rem .85rem;
+      border-radius: 999px;
+      border: 1px solid rgba(217, 164, 65, .40);
+      background: rgba(255,255,255,.58);
+      color: var(--gold-dark);
+      font-size: .75rem;
+      font-weight: 820;
+      letter-spacing: .14em;
       text-transform: uppercase;
-      padding: 0.3rem 0.85rem;
-      border-radius: 100px;
-      margin-bottom: 1.25rem;
+      box-shadow: 0 9px 32px rgba(217,164,65,.13);
+    }
+
+    .hero-badge i {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--gold);
+      box-shadow: 0 0 0 5px rgba(217,164,65,.16);
     }
 
     .hero h1 {
-      font-size: clamp(2rem, 4.5vw, 3rem);
+      margin-top: 1.35rem;
+      max-width: 620px;
+      color: var(--ink);
+      font-size: clamp(3.05rem, 6.2vw, 6.4rem);
       font-weight: 900;
-      line-height: 1.15;
-      color: var(--gray-900);
-      margin-bottom: 1.2rem;
+      line-height: .91;
+      letter-spacing: -.075em;
+      text-wrap: balance;
     }
 
-    .hero h1 em {
-      font-style: normal;
-      color: var(--red);
-    }
+    .hero h1 span { color: var(--red); }
 
     .hero-desc {
-      font-size: 1rem;
-      color: var(--gray-500);
-      margin-bottom: 2.2rem;
-      max-width: 460px;
-      line-height: 1.75;
+      max-width: 560px;
+      margin-top: 1.45rem;
+      color: #5f6b7d;
+      font-size: 1.08rem;
+      line-height: 1.86;
     }
 
     .hero-actions {
+      margin-top: 2rem;
       display: flex;
-      gap: 0.9rem;
       flex-wrap: wrap;
+      gap: .85rem;
       align-items: center;
+    }
+
+    .btn-primary, .btn-secondary, .btn-cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: .65rem;
+      min-height: 52px;
+      padding: 0 1.35rem;
+      border-radius: 999px;
+      font-weight: 820;
+      font-size: .95rem;
+      transition: transform .2s ease, box-shadow .2s ease, background .2s ease, color .2s ease, border-color .2s ease;
     }
 
     .btn-primary {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      background: var(--red);
       color: var(--white);
-      font-weight: 700;
-      font-size: 0.95rem;
-      padding: 0.8rem 1.7rem;
-      border-radius: 8px;
-      border: none;
-      cursor: pointer;
-      transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
-      box-shadow: 0 4px 14px rgba(185,28,28,.22);
+      background: var(--red);
+      box-shadow: 0 16px 32px rgba(186, 22, 28, .25);
     }
 
-    .btn-primary:hover {
-      background: var(--red-dark);
-      transform: translateY(-2px);
-      box-shadow: 0 8px 22px rgba(185,28,28,.28);
-    }
+    .btn-primary:hover { background: var(--red-dark); transform: translateY(-2px); box-shadow: 0 22px 40px rgba(186, 22, 28, .30); }
 
     .btn-secondary {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      background: transparent;
-      color: var(--gray-700);
-      font-weight: 600;
-      font-size: 0.92rem;
-      padding: 0.8rem 1.5rem;
-      border-radius: 8px;
-      border: 1.5px solid var(--gray-300);
-      cursor: pointer;
-      transition: border-color 0.2s, color 0.2s, background 0.2s;
+      color: var(--ink);
+      border: 1px solid rgba(9, 11, 16, .18);
+      background: rgba(255,255,255,.52);
     }
 
-    .btn-secondary:hover {
-      border-color: var(--red);
-      color: var(--red);
-      background: rgba(185,28,28,0.04);
+    .btn-secondary:hover { border-color: rgba(217,164,65,.75); background: rgba(255,255,255,.82); transform: translateY(-2px); }
+
+    .hero-points {
+      margin-top: 2.1rem;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: .8rem;
+      max-width: 620px;
+    }
+
+    .hero-point {
+      padding: .95rem;
+      border: 1px solid rgba(9,11,16,.10);
+      border-radius: 18px;
+      background: rgba(255,250,240,.94);
+      color: #334155;
+      font-size: .82rem;
+      font-weight: 720;
+      line-height: 1.35;
+    }
+
+    .hero-point strong {
+      display: block;
+      margin-bottom: .12rem;
+      color: var(--ink);
+      font-size: 1rem;
     }
 
     .hero-visual {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      position: relative;
+      min-height: 520px;
+    }
+
+    .hero-card {
+      position: absolute;
+      inset: 34px 0 0 0;
+      border-radius: 34px;
+      padding: 1rem;
+      background: linear-gradient(150deg, rgba(255,255,255,.18), rgba(255,255,255,.04));
+      border: 1px solid rgba(255,255,255,.18);
+      box-shadow: 0 30px 90px rgba(0,0,0,.34);
+      overflow: hidden;
     }
 
     .hero-img {
       width: 100%;
-      max-width: 580px;
-      border-radius: 16px;
-      box-shadow: var(--shadow-lg);
+      height: 100%;
+      min-height: 455px;
       object-fit: cover;
-      aspect-ratio: 16/9;
-      display: block;
+      border-radius: 25px;
+      opacity: .78;
+      filter: saturate(.93) contrast(1.06);
     }
 
-    /* ── WHY SECTION IMAGE ── */
-    .why-img {
+    .emblem-stage {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: min(420px, 88%);
+      aspect-ratio: 1 / 1.06;
+      transform: translate(-50%, -48%);
+      display: grid;
+      place-items: center;
+      z-index: 2;
+    }
+
+    .emblem-stage::before {
+      content: "";
+      position: absolute;
+      inset: 14% 12% 2%;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(243,210,133,.38), rgba(217,164,65,.10) 44%, transparent 66%);
+      filter: blur(22px);
+    }
+
+    .hero-emblem {
+      position: relative;
       width: 100%;
-      border-radius: 14px;
-      box-shadow: var(--shadow-md);
-      object-fit: cover;
-      aspect-ratio: 4/3;
-      display: block;
+      object-fit: contain;
+      filter: drop-shadow(0 28px 30px rgba(0,0,0,.45));
     }
 
-    .why-item {
+    .status-card {
+      position: absolute;
+      z-index: 3;
+      right: -12px;
+      bottom: 24px;
+      width: min(315px, 74%);
+      padding: 1.05rem;
+      border-radius: 22px;
+      color: var(--white);
+      background: rgba(16, 23, 34, .78);
+      border: 1px solid rgba(255,255,255,.18);
+      backdrop-filter: blur(18px);
+      box-shadow: 0 24px 55px rgba(0,0,0,.32);
+    }
+
+    .status-card small {
+      color: var(--gold-light);
+      font-size: .7rem;
+      font-weight: 850;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .status-card p {
+      margin-top: .35rem;
+      color: rgba(255,255,255,.82);
+      font-size: .88rem;
+      line-height: 1.55;
+    }
+
+    /* Services */
+    section { padding: 6.2rem 0; }
+
+    .services {
+      background: linear-gradient(180deg, var(--paper), #f8f3e9);
+    }
+
+    .section-top {
       display: flex;
-      gap: 1.1rem;
-      align-items: flex-start;
+      justify-content: space-between;
+      align-items: end;
+      gap: 2rem;
+      margin-bottom: 2.2rem;
     }
-    section { padding: 5rem 1.5rem; }
 
-    /* ── SERVICES ── */
-    .services { background: var(--off-white); }
-
-    .services-header {
-      max-width: 580px;
-      margin-bottom: 3rem;
+    .mini-note {
+      max-width: 300px;
+      color: var(--muted);
+      font-size: .92rem;
+      line-height: 1.75;
     }
 
     .services-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 1.5rem;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 1rem;
     }
 
     .service-card {
-      background: var(--white);
-      border: 1px solid var(--gray-200);
-      border-radius: 14px;
-      padding: 2rem 1.75rem;
-      transition: box-shadow 0.25s, transform 0.25s, border-color 0.25s;
-      box-shadow: var(--shadow-sm);
+      position: relative;
+      min-height: 315px;
+      padding: 1.45rem;
+      border: 1px solid rgba(15,23,42,.10);
+      border-radius: 26px;
+      background: rgba(255,255,255,.72);
+      box-shadow: 0 14px 38px rgba(15,23,42,.07);
+      overflow: hidden;
+      transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
     }
 
-    .service-card:hover {
-      box-shadow: var(--shadow-lg);
-      transform: translateY(-4px);
-      border-color: rgba(185,28,28,0.25);
+    .service-card::before {
+      content: "";
+      position: absolute;
+      inset: 0 0 auto;
+      height: 5px;
+      background: linear-gradient(90deg, var(--gold), var(--red));
+      opacity: .92;
     }
+
+    .service-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-soft); border-color: rgba(217,164,65,.45); }
 
     .service-icon {
-      width: 48px;
-      height: 48px;
-      background: rgba(185,28,28,0.07);
-      border-radius: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.45rem;
-      margin-bottom: 1.2rem;
+      width: 54px;
+      height: 54px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 1.5rem;
+      border-radius: 18px;
+      color: var(--ink);
+      background: linear-gradient(145deg, #fff6db, #f1d07b);
+      box-shadow: var(--shadow-gold);
+      font-size: 1.28rem;
     }
 
     .service-card h3 {
-      font-size: 1rem;
-      font-weight: 700;
-      color: var(--gray-900);
-      margin-bottom: 0.55rem;
+      color: var(--ink);
+      font-size: 1.1rem;
+      line-height: 1.18;
+      letter-spacing: -.025em;
+      margin-bottom: .75rem;
     }
 
     .service-card p {
-      font-size: 0.87rem;
-      color: var(--gray-500);
-      line-height: 1.7;
+      color: var(--muted);
+      font-size: .91rem;
+      line-height: 1.78;
     }
 
-    /* ── WHY ── */
-    .why { background: var(--white); }
-
-    .why-header {
-      max-width: 580px;
-      margin-bottom: 3rem;
+    .service-card .service-link {
+      position: absolute;
+      left: 1.45rem;
+      bottom: 1.35rem;
+      color: var(--red);
+      font-size: .86rem;
+      font-weight: 820;
     }
+
+    /* Why */
+    .why {
+      color: var(--white);
+      background:
+        radial-gradient(circle at 15% 15%, rgba(217,164,65,.24), transparent 28%),
+        linear-gradient(135deg, var(--navy), var(--ink));
+    }
+
+    .why .section-title { color: var(--white); }
+    .why .section-sub, .why .mini-note { color: rgba(255,255,255,.68); }
+    .why .eyebrow { color: var(--gold-light); }
 
     .why-grid {
+      margin-top: 2.4rem;
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 3rem;
-      align-items: center;
+      grid-template-columns: .92fr 1.08fr;
+      gap: 1.6rem;
+      align-items: stretch;
+    }
+
+    .why-photo {
+      position: relative;
+      min-height: 560px;
+      border-radius: 32px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,.14);
+      box-shadow: 0 28px 75px rgba(0,0,0,.30);
+      background: var(--navy-2);
+    }
+
+    .why-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: .78;
+      filter: saturate(.86) contrast(1.05);
+    }
+
+    .why-photo::after {
+      content: "Dokumentasi. Koordinasi. Pengiriman.";
+      position: absolute;
+      left: 1.25rem;
+      right: 1.25rem;
+      bottom: 1.25rem;
+      padding: 1rem 1.05rem;
+      border-radius: 18px;
+      background: rgba(9,11,16,.72);
+      border: 1px solid rgba(255,255,255,.16);
+      backdrop-filter: blur(14px);
+      color: var(--white);
+      font-weight: 820;
+      letter-spacing: -.015em;
+    }
+
+    .why-list {
+      display: grid;
+      gap: .85rem;
     }
 
     .why-item {
-      display: flex;
-      gap: 1.1rem;
-      align-items: flex-start;
+      display: grid;
+      grid-template-columns: 56px 1fr;
+      gap: 1rem;
+      padding: 1.25rem;
+      border-radius: 24px;
+      background: rgba(255,255,255,.07);
+      border: 1px solid rgba(255,255,255,.12);
+      backdrop-filter: blur(12px);
     }
 
     .why-num {
-      flex-shrink: 0;
-      width: 36px;
-      height: 36px;
-      background: rgba(185,28,28,0.08);
-      border: 1.5px solid rgba(185,28,28,0.2);
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.82rem;
-      font-weight: 800;
-      color: var(--red);
+      width: 48px;
+      height: 48px;
+      display: grid;
+      place-items: center;
+      border-radius: 16px;
+      color: var(--ink);
+      background: linear-gradient(145deg, var(--gold-light), var(--gold));
+      font-size: .9rem;
+      font-weight: 900;
+      box-shadow: 0 12px 28px rgba(217,164,65,.22);
     }
 
     .why-item h3 {
-      font-size: 0.97rem;
-      font-weight: 700;
-      color: var(--gray-900);
-      margin-bottom: 0.3rem;
+      color: var(--white);
+      font-size: 1.05rem;
+      margin-bottom: .2rem;
     }
 
     .why-item p {
-      font-size: 0.86rem;
-      color: var(--gray-500);
-      line-height: 1.65;
+      color: rgba(255,255,255,.68);
+      font-size: .92rem;
+      line-height: 1.68;
     }
 
-    /* ── CTA STRIP ── */
+    /* Process strip */
+    .process {
+      background: var(--paper);
+      padding: 5.4rem 0;
+    }
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin-top: 2.3rem;
+    }
+
+    .process-card {
+      padding: 1.4rem;
+      border-radius: 24px;
+      border: 1px solid rgba(15,23,42,.10);
+      background: rgba(255,255,255,.58);
+    }
+
+    .process-card span {
+      color: var(--gold-dark);
+      font-size: .78rem;
+      font-weight: 900;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .process-card h3 {
+      margin-top: .65rem;
+      color: var(--ink);
+      font-size: 1.12rem;
+      letter-spacing: -.025em;
+    }
+
+    .process-card p {
+      margin-top: .45rem;
+      color: var(--muted);
+      font-size: .92rem;
+      line-height: 1.72;
+    }
+
+    /* CTA */
     .cta-strip {
-      background: var(--red);
-      padding: 4rem 1.5rem;
+      padding: 0 0 6.2rem;
+      background: var(--paper);
+    }
+
+    .cta-card {
+      position: relative;
+      overflow: hidden;
+      padding: clamp(2.2rem, 5vw, 4.5rem);
+      border-radius: 36px;
+      background:
+        radial-gradient(circle at 85% 20%, rgba(217,164,65,.32), transparent 32%),
+        linear-gradient(135deg, var(--red), var(--red-dark));
+      box-shadow: 0 28px 80px rgba(186,22,28,.22);
+      color: var(--white);
       text-align: center;
     }
 
-    .cta-strip h2 {
-      font-size: clamp(1.5rem, 3vw, 2.1rem);
-      font-weight: 900;
-      color: var(--white);
-      margin-bottom: 0.7rem;
+    .cta-card::before {
+      content: "";
+      position: absolute;
+      inset: -120px auto auto -100px;
+      width: 320px;
+      height: 320px;
+      border-radius: 50%;
+      border: 1px solid rgba(255,255,255,.20);
     }
 
-    .cta-strip p {
-      font-size: 0.95rem;
-      color: rgba(255,255,255,0.82);
-      margin-bottom: 2rem;
+    .cta-card h2 {
+      position: relative;
+      max-width: 780px;
+      margin: 0 auto;
+      font-size: clamp(2rem, 4vw, 4rem);
+      line-height: 1.02;
+      letter-spacing: -.06em;
+      font-weight: 900;
+      text-wrap: balance;
+    }
+
+    .cta-card p {
+      position: relative;
+      margin: 1rem auto 1.7rem;
+      max-width: 620px;
+      color: rgba(255,255,255,.80);
+      font-size: 1.02rem;
     }
 
     .btn-cta {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.6rem;
+      position: relative;
+      color: var(--ink);
       background: var(--white);
-      color: var(--red);
-      font-weight: 800;
-      font-size: 1rem;
-      padding: 0.85rem 2rem;
-      border-radius: 8px;
-      border: none;
-      cursor: pointer;
-      transition: transform 0.15s, box-shadow 0.2s, background 0.2s;
-      box-shadow: 0 4px 16px rgba(0,0,0,.15);
+      box-shadow: 0 14px 35px rgba(0,0,0,.16);
     }
 
-    .btn-cta:hover {
-      background: var(--gray-100);
-      transform: translateY(-2px);
-      box-shadow: 0 8px 24px rgba(0,0,0,.20);
-    }
+    .btn-cta:hover { transform: translateY(-2px); background: var(--gold-light); }
 
-    /* ── FOOTER ── */
+    /* Footer */
     footer {
-      background: var(--gray-900);
-      padding: 3rem 1.5rem;
+      background: var(--ink);
+      color: var(--white);
+      padding: 4.5rem 0 2rem;
     }
 
     .footer-inner {
-      max-width: 1100px;
-      margin: 0 auto;
       display: grid;
-      grid-template-columns: 1.4fr 1fr 1fr;
+      grid-template-columns: 1.45fr .8fr 1fr;
       gap: 3rem;
-      padding-bottom: 2rem;
-      border-bottom: 1px solid rgba(255,255,255,0.08);
-      margin-bottom: 1.5rem;
+      padding-bottom: 2.4rem;
+      border-bottom: 1px solid rgba(255,255,255,.10);
+    }
+
+    .footer-logo {
+      width: 68px;
+      height: 68px;
+      object-fit: contain;
+      filter: drop-shadow(0 8px 18px rgba(217,164,65,.26));
+      margin-bottom: 1rem;
     }
 
     .footer-brand-name {
-      font-size: 1.1rem;
-      font-weight: 800;
-      color: var(--white);
-      margin-bottom: 0.4rem;
+      font-size: 1.18rem;
+      font-weight: 900;
+      letter-spacing: -.025em;
     }
 
-    .footer-brand-name span { color: var(--red-light); }
+    .footer-brand-name span { color: #ff3339; }
 
     .footer-company {
-      font-size: 0.8rem;
-      color: rgba(255,255,255,0.45);
-      margin-bottom: 1rem;
+      margin-top: .25rem;
+      color: rgba(255,255,255,.45);
+      font-size: .8rem;
     }
 
     .footer-desc {
-      font-size: 0.84rem;
-      color: rgba(255,255,255,0.45);
-      line-height: 1.7;
-      max-width: 280px;
+      margin-top: 1rem;
+      max-width: 330px;
+      color: rgba(255,255,255,.58);
+      font-size: .92rem;
+      line-height: 1.78;
     }
 
     .footer-col-title {
-      font-size: 0.72rem;
-      font-weight: 800;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: rgba(255,255,255,0.45);
       margin-bottom: 1rem;
+      color: var(--gold-light);
+      font-size: .72rem;
+      font-weight: 900;
+      letter-spacing: .16em;
+      text-transform: uppercase;
     }
 
     .footer-links {
+      display: grid;
+      gap: .7rem;
       list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 0.55rem;
     }
 
     .footer-links a {
-      font-size: 0.87rem;
-      color: rgba(255,255,255,0.65);
-      transition: color 0.2s;
+      color: rgba(255,255,255,.68);
+      font-size: .92rem;
+      transition: color .2s ease;
     }
 
     .footer-links a:hover { color: var(--white); }
 
     .footer-bottom {
-      max-width: 1100px;
-      margin: 0 auto;
+      padding-top: 1.4rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      gap: 1rem;
       flex-wrap: wrap;
-      gap: 0.75rem;
+      color: rgba(255,255,255,.40);
+      font-size: .82rem;
     }
 
-    .footer-copy {
-      font-size: 0.8rem;
-      color: rgba(255,255,255,0.35);
+    .footer-legal { display: flex; gap: 1.3rem; }
+    .footer-legal a:hover { color: rgba(255,255,255,.72); }
+
+    @media (max-width: 1040px) {
+      .hero { background: linear-gradient(180deg, rgba(255,250,240,.98) 0%, rgba(255,250,240,.98) 48%, var(--ink) 48.2%, var(--navy) 100%); }
+      .hero-inner { grid-template-columns: 1fr; gap: 3rem; }
+      .hero-visual { min-height: 560px; }
+      .services-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .why-grid { grid-template-columns: 1fr; }
+      .why-photo { min-height: 420px; }
+      .process-grid { grid-template-columns: 1fr; }
     }
 
-    .footer-legal {
-      display: flex;
-      gap: 1.5rem;
-    }
-
-    .footer-legal a {
-      font-size: 0.8rem;
-      color: rgba(255,255,255,0.35);
-      transition: color 0.2s;
-    }
-
-    .footer-legal a:hover { color: rgba(255,255,255,0.7); }
-
-    /* ── RESPONSIVE ── */
-    @media (max-width: 900px) {
-      .hero-inner { grid-template-columns: 1fr; gap: 2.5rem; }
-      .hero-visual { order: -1; }
-      .hero-card { max-width: 100%; }
-      .footer-inner { grid-template-columns: 1fr 1fr; }
-    }
-
-    @media (max-width: 640px) {
-      .nav-toggle { display: flex; align-items: center; }
-
+    @media (max-width: 760px) {
+      header { top: 10px; }
+      .header-inner { border-radius: 26px; padding: .55rem; }
+      .brand-tagline { display: none; }
+      .brand-name { font-size: .98rem; }
+      .brand-logo { width: 42px; height: 42px; }
+      .nav-toggle { display: inline-flex; }
       nav {
-        position: absolute;
-        top: 64px;
-        left: 0;
-        right: 0;
-        background: var(--white);
-        border-top: 1px solid var(--gray-200);
-        border-bottom: 1px solid var(--gray-200);
-        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-        z-index: 99;
         display: none;
+        position: absolute;
+        left: 12px;
+        right: 12px;
+        top: 76px;
+        padding: .75rem;
+        border-radius: 22px;
+        border: 1px solid rgba(15,23,42,.12);
+        background: rgba(255,250,240,.96);
+        box-shadow: 0 18px 45px rgba(15,23,42,.16);
       }
-
       nav.open { display: block; }
+      nav ul { flex-direction: column; align-items: stretch; gap: .25rem; }
+      nav a { justify-content: flex-start; width: 100%; padding: 0 1rem; }
+      .btn-header { justify-content: center; }
 
-      nav ul {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0;
-        padding: 0.75rem 1.25rem;
-      }
-
-      nav ul li { width: 100%; }
-
-      nav a, nav li {
-        display: block;
-        padding: 0.65rem 0;
-        font-size: 0.95rem;
-        border-bottom: 1px solid var(--gray-100);
-        width: 100%;
-      }
-
-      nav li:last-child a { border-bottom: none; }
-
-      .btn-header {
-        display: block;
-        text-align: center;
-        margin-top: 0.5rem;
-        padding: 0.6rem 1.2rem;
-        width: 100%;
-      }
-
-      section { padding: 3.5rem 1.25rem; }
-      .hero { padding: 7rem 1.25rem 3.5rem; }
-      .hero h1 { font-size: 1.85rem; }
-      .hero-actions { flex-direction: column; }
-      .hero-actions .btn-primary,
-      .hero-actions .btn-secondary { width: 100%; justify-content: center; }
-      .why-grid { grid-template-columns: 1fr; gap: 1.5rem; }
-      .why-img { max-width: 100%; }
-      .brand-logo { height: 38px; max-height: 38px; }
+      .hero { min-height: auto; padding: 8.3rem 0 4.2rem; }
+      .hero h1 { font-size: clamp(2.75rem, 15vw, 4.4rem); }
+      .hero-points { grid-template-columns: 1fr; }
+      .hero-actions a { width: 100%; }
+      .hero-visual { min-height: 470px; }
+      .hero-card { inset: 52px 0 0; border-radius: 26px; }
+      .hero-img { min-height: 365px; border-radius: 20px; }
+      .status-card { right: 8px; left: 8px; width: auto; bottom: 0; }
+      section { padding: 4.4rem 0; }
+      .section-top { display: block; }
+      .mini-note { margin-top: 1rem; }
+      .services-grid { grid-template-columns: 1fr; }
+      .service-card { min-height: 265px; }
+      .why-photo { min-height: 330px; }
+      .why-item { grid-template-columns: 44px 1fr; padding: 1rem; }
+      .why-num { width: 42px; height: 42px; border-radius: 14px; }
       .footer-inner { grid-template-columns: 1fr; gap: 2rem; }
-      .footer-bottom { flex-direction: column; text-align: center; }
-      .footer-desc { max-width: 100%; }
+      .footer-bottom { flex-direction: column; align-items: flex-start; }
+      .footer-legal { flex-direction: column; gap: .5rem; }
     }
 
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; animation: none !important; }
+    }
   </style>
 </head>
 <body>
-
-  <!-- ── HEADER ── -->
   <header>
     <div class="header-inner">
-      <a href="#beranda" class="brand">
-        <img src="assets/brand/garuda-logistik-logo.png" alt="Garuda Logistik" class="brand-logo">
-        <div class="brand-text">
+      <a href="#beranda" class="brand" aria-label="Garuda Logistik beranda">
+        <img src="assets/brand/garuda-logistik-emblem.png" alt="Garuda Logistik" class="brand-logo">
+        <div>
           <div class="brand-name">Garuda <span>Logistik</span></div>
           <div class="brand-tagline">PT Garuda Cahaya Nusantara Logistik</div>
         </div>
       </a>
-      <nav>
+      <nav id="site-nav" aria-label="Navigasi utama">
         <ul>
           <li><a href="#layanan">Layanan</a></li>
+          <li><a href="#proses">Proses</a></li>
           <li><a href="#keunggulan">Keunggulan</a></li>
           <li><a href="#kontak">Kontak</a></li>
           <li><a href="https://wa.me/6281277797979" class="btn-header" target="_blank" rel="noopener">Hubungi Kami</a></li>
         </ul>
       </nav>
-      <button class="nav-toggle" aria-label="Buka menu" onclick="this.classList.toggle('active'); document.querySelector('nav').classList.toggle('open')">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
-          <line class="bar1" x1="3" y1="6" x2="21" y2="6"/>
-          <line class="bar2" x1="3" y1="12" x2="21" y2="12"/>
-          <line class="bar3" x1="3" y1="18" x2="21" y2="18"/>
+      <button class="nav-toggle" aria-label="Buka menu" aria-controls="site-nav" aria-expanded="false">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true">
+          <path d="M4 7h16M4 12h16M4 17h16"/>
         </svg>
       </button>
     </div>
   </header>
 
-  <!-- ── HERO ── -->
-  <section class="hero" id="beranda">
-    <div class="hero-inner">
-      <!-- Text -->
-      <div class="hero-text">
-        <div class="hero-badge">
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"/></svg>
-          Solusi Logistik Terpercaya
+  <main>
+    <section class="hero" id="beranda">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <div class="hero-badge"><i></i> Solusi logistik terpercaya</div>
+          <h1>Logistik bisnis yang <span>rapi</span>, cepat, dan transparan.</h1>
+          <p class="hero-desc">
+            Garuda Logistik membantu bisnis mengirim barang, cargo, dan kebutuhan distribusi dengan koordinasi yang jelas dari penjemputan sampai barang diterima.
+          </p>
+          <div class="hero-actions">
+            <a href="https://wa.me/6281277797979" class="btn-primary" target="_blank" rel="noopener" aria-label="Chat Garuda Logistik melalui WhatsApp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347M12.05 21.785h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884M20.463 3.49A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+              Chat WhatsApp
+            </a>
+            <a href="#layanan" class="btn-secondary">Lihat Layanan</a>
+          </div>
+          <div class="hero-points" aria-label="Keunggulan singkat">
+            <div class="hero-point"><strong>Door-to-door</strong>Penjemputan sampai tujuan.</div>
+            <div class="hero-point"><strong>Terkoordinasi</strong>Update jelas untuk bisnis.</div>
+            <div class="hero-point"><strong>Fleksibel</strong>Paket, cargo, dan trucking.</div>
+          </div>
         </div>
-        <h1>Solusi <em>Logistik</em> Terpercaya untuk Bisnis Anda</h1>
-        <p class="hero-desc">
-          Kami menghadirkan layanan pengiriman barang, cargo, trucking, dan distribusi yang andal — dirancang khusus untuk mendukung operasional bisnis, UMKM, distributor, dan toko online di seluruh Indonesia.
-        </p>
-        <div class="hero-actions">
-          <a href="https://wa.me/6281277797979" class="btn-primary" target="_blank" rel="noopener">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            Chat WhatsApp
+
+        <div class="hero-visual" aria-label="Visual Garuda Logistik">
+          <div class="hero-card">
+            <img src="assets/images/hero-logistics.jpg" alt="Area logistik dengan kapal, truk, pesawat, dan kereta" class="hero-img">
+          </div>
+          <div class="emblem-stage">
+            <img src="assets/brand/garuda-logistik-emblem.png" alt="Logo Garuda Logistik" class="hero-emblem">
+          </div>
+          <div class="status-card">
+            <small>Bisnis berjalan, logistik terkendali</small>
+            <p>Satu mitra untuk kebutuhan pengiriman reguler, cargo besar, dan distribusi harian.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="layanan">
+      <div class="container">
+        <div class="section-top">
+          <div>
+            <div class="eyebrow">Layanan Kami</div>
+            <h2 class="section-title">Solusi lengkap untuk kebutuhan pengiriman bisnis.</h2>
+          </div>
+          <p class="mini-note">Layanan dirancang untuk UMKM, toko online, distributor, dan perusahaan yang butuh pengiriman rapi tanpa proses yang rumit.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-icon">📦</div>
+            <h3>Pengiriman Barang</h3>
+            <p>Pengiriman paket dan barang untuk kebutuhan pribadi maupun bisnis, dengan koordinasi status yang mudah dipahami.</p>
+            <a class="service-link" href="https://wa.me/6281277797979" target="_blank" rel="noopener">Tanya layanan →</a>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">🚚</div>
+            <h3>Cargo dan Ekspedisi</h3>
+            <p>Solusi cargo darat, laut, dan udara untuk pengiriman besar, repeat order, atau kebutuhan distribusi lintas wilayah.</p>
+            <a class="service-link" href="https://wa.me/6281277797979" target="_blank" rel="noopener">Tanya layanan →</a>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">🛣️</div>
+            <h3>Trucking dan Distribusi</h3>
+            <p>Armada untuk distribusi intra-city dan inter-city, cocok untuk stok ulang gudang, toko, dan jaringan pelanggan.</p>
+            <a class="service-link" href="https://wa.me/6281277797979" target="_blank" rel="noopener">Tanya layanan →</a>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">🤝</div>
+            <h3>Solusi Logistik Bisnis</h3>
+            <p>Pendampingan operasional logistik, mulai dari perencanaan rute, kebutuhan armada, sampai eksekusi pengiriman rutin.</p>
+            <a class="service-link" href="https://wa.me/6281277797979" target="_blank" rel="noopener">Tanya layanan →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="process" id="proses">
+      <div class="container">
+        <div class="eyebrow">Cara Kerja</div>
+        <h2 class="section-title">Alur sederhana supaya pengiriman lebih tenang.</h2>
+        <p class="section-sub">Kami menjaga komunikasi tetap jelas, mulai dari permintaan layanan sampai pengiriman selesai.</p>
+        <div class="process-grid">
+          <article class="process-card">
+            <span>01 / Konsultasi</span>
+            <h3>Ceritakan kebutuhan kiriman Anda</h3>
+            <p>Tim kami mencatat jenis barang, tujuan, jadwal, dan kebutuhan armada agar solusi yang diberikan sesuai.</p>
+          </article>
+          <article class="process-card">
+            <span>02 / Koordinasi</span>
+            <h3>Penjemputan dan pengiriman diatur</h3>
+            <p>Proses dibuat rapi dengan update yang mudah dipahami, sehingga Anda tahu posisi operasional pengiriman.</p>
+          </article>
+          <article class="process-card">
+            <span>03 / Selesai</span>
+            <h3>Barang diterima dan terdokumentasi</h3>
+            <p>Pengiriman diselesaikan dengan konfirmasi penerimaan, lalu bisa dilanjutkan untuk kebutuhan rutin berikutnya.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="why" id="keunggulan">
+      <div class="container">
+        <div class="section-top">
+          <div>
+            <div class="eyebrow">Keunggulan Kami</div>
+            <h2 class="section-title">Mengapa bisnis memilih Garuda Logistik?</h2>
+          </div>
+          <p class="mini-note">Fokus kami bukan hanya mengirim barang, tetapi membuat proses logistik bisnis terasa lebih tertata.</p>
+        </div>
+        <div class="why-grid">
+          <div class="why-photo">
+            <img src="assets/images/support-logistics.jpg" alt="Koordinasi operasional logistik dan pengiriman barang">
+          </div>
+          <div class="why-list">
+            <article class="why-item">
+              <div class="why-num">01</div>
+              <div>
+                <h3>Komunikasi Jelas</h3>
+                <p>Update pengiriman disampaikan langsung dan transparan, tanpa jargon teknis yang membingungkan.</p>
+              </div>
+            </article>
+            <article class="why-item">
+              <div class="why-num">02</div>
+              <div>
+                <h3>Proses Rapi</h3>
+                <p>Dari penjemputan hingga delivery, setiap langkah dikoordinasikan dengan standar operasional yang konsisten.</p>
+              </div>
+            </article>
+            <article class="why-item">
+              <div class="why-num">03</div>
+              <div>
+                <h3>Cocok untuk Semua Skala Bisnis</h3>
+                <p>Baik UMKM, toko online, distributor, maupun perusahaan besar — layanan dapat mengikuti kebutuhan operasional Anda.</p>
+              </div>
+            </article>
+            <article class="why-item">
+              <div class="why-num">04</div>
+              <div>
+                <h3>Jangkauan Nasional</h3>
+                <p>Jaringan distribusi yang menghubungkan kebutuhan pengiriman bisnis ke berbagai kota di Indonesia.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-strip">
+      <div class="container">
+        <div class="cta-card">
+          <h2>Siap membuat logistik bisnis lebih terkendali?</h2>
+          <p>Hubungi Garuda Logistik melalui WhatsApp untuk konsultasi kebutuhan pengiriman, cargo, trucking, dan distribusi bisnis Anda.</p>
+          <a href="https://wa.me/6281277797979" class="btn-cta" target="_blank" rel="noopener">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
+            Mulai via WhatsApp
           </a>
-          <a href="#layanan" class="btn-secondary">Lihat Layanan</a>
         </div>
       </div>
+    </section>
+  </main>
 
-      <!-- Hero image -->
-      <div class="hero-visual">
-        <img
-          src="assets/images/hero-with-logo.png"
-          alt="Ilustrasi layanan logistik Garuda Logistik"
-          class="hero-img"
-        >
-      </div>
-    </div>
-  </section>
-
-  <!-- ── SERVICES ── -->
-  <section class="services" id="layanan">
-    <div class="container">
-      <div class="services-header">
-        <div class="section-label">Layanan Kami</div>
-        <h2 class="section-title">Solusi Lengkap untuk Setiap Kebutuhan Pengiriman</h2>
-        <p class="section-sub">Tidak peduli apakah Anda mengelola toko online, distributor, atau perusahaan besar — layanan kami fleksibel dan skalabel untuk semua skala bisnis.</p>
-      </div>
-      <div class="services-grid">
-        <div class="service-card">
-          <div class="service-icon">&#128230;</div>
-          <h3>Pengiriman Barang</h3>
-          <p>Layanan pengiriman paket dan barang untuk kebutuhan pribadi maupun bisnis, dengan jangkauan nasional yang luas dan pelacakan real-time.</p>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">&#128666;</div>
-          <h3>Cargo dan Ekspedisi</h3>
-          <p>Solusi cargo udara, laut, dan darat untuk kiriman dalam jumlah besar dengan layanan door-to-door yang lengkap dan terpercaya.</p>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">&#128993;</div>
-          <h3>Trucking dan Distribusi</h3>
-          <p>Armada trucking yang siap melayani distribusi intra-city dan inter-city, cocok untuk stok ulang gudang dan supply chain bisnis Anda.</p>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">&#128188;</div>
-          <h3>Solusi Logistik Bisnis</h3>
-          <p>Konsultasi dan setup sistem logistik khusus untuk perusahaan — dari perencanaan rantai pasok hingga eksekusi distribusi harian.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── WHY CHOOSE US ── -->
-  <section class="why" id="keunggulan">
-    <div class="container">
-      <div class="why-header">
-        <div class="section-label">Keunggulan Kami</div>
-        <h2 class="section-title">Mengapa Bisnis Memilih Garuda Logistik?</h2>
-        <p class="section-sub">Komitmen kami adalah memberikan pengalaman logistik yang transparan, tertata, dan bebas khawatir — sehingga Anda bisa fokus mengembangkan bisnis.</p>
-      </div>
-      <div class="why-grid">
-        <img
-          src="assets/images/support-logistics.jpg"
-          alt="Ilustrasi operasional logistik dan distribusi"
-          class="why-img"
-        >
-        <div>
-          <div class="why-item">
-            <div class="why-num">1</div>
-            <div>
-              <h3>Komunikasi Jelas</h3>
-              <p>Setiap update pengiriman disampaikan secara langsung dan transparan — tanpa jargon teknis yang membingungkan. Anda selalu tahu status barang Anda.</p>
-            </div>
-          </div>
-          <div class="why-item">
-            <div class="why-num">2</div>
-            <div>
-              <h3>Proses Rapi</h3>
-              <p>Dari penjemputan hingga delivery, setiap langkah didokumentasikan dan dikoordinasikan dengan standar operasional yang ketat.</p>
-            </div>
-          </div>
-          <div class="why-item">
-            <div class="why-num">3</div>
-            <div>
-              <h3>Cocok untuk Semua Skala Bisnis</h3>
-              <p>Baik Anda pelaku UMKM, toko online, distributor, maupun perusahaan besar — layanan kami fleksibel dan berkembang bersama kebutuhan Anda.</p>
-            </div>
-          </div>
-          <div class="why-item">
-            <div class="why-num">4</div>
-            <div>
-              <h3>Jangkauan Nasional</h3>
-              <p>Jaringan distribusi yang mencakup berbagai kota dan provinsi di Indonesia, siap menghubungkan bisnis Anda ke seluruh penjuru tanah air.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── CTA STRIP ── -->
-  <div class="cta-strip">
-    <div class="container">
-      <h2>Siap Mengoptimalkan Logistik Bisnis Anda?</h2>
-      <p>Hubungi tim kami sekarang via WhatsApp untuk konsultasi gratis.</p>
-      <a href="https://wa.me/6281277797979" class="btn-cta" target="_blank" rel="noopener">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-        Mulai via WhatsApp
-      </a>
-    </div>
-  </div>
-
-  <!-- ── FOOTER ── -->
   <footer id="kontak">
-    <div class="footer-inner">
-      <!-- Brand -->
-      <div>
-        <img src="assets/brand/garuda-logistik-logo.png" alt="Garuda Logistik" style="height:48px;width:auto;max-height:48px;object-fit:contain;margin-bottom:0.75rem;display:block;">
-        <div class="footer-brand-name">Garuda <span>Logistik</span></div>
-        <div class="footer-company">PT Garuda Cahaya Nusantara Logistik</div>
-        <p class="footer-desc">Mitra logistik terpercaya untuk bisnis di seluruh Indonesia. Pengiriman terintegrasi, transparan, dan terjamin.</p>
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <img src="assets/brand/garuda-logistik-emblem.png" alt="Garuda Logistik" class="footer-logo">
+          <div class="footer-brand-name">Garuda <span>Logistik</span></div>
+          <div class="footer-company">PT Garuda Cahaya Nusantara Logistik</div>
+          <p class="footer-desc">Mitra logistik untuk bisnis di Indonesia. Pengiriman barang, cargo, trucking, dan distribusi dengan koordinasi yang jelas.</p>
+        </div>
+        <div>
+          <div class="footer-col-title">Layanan</div>
+          <ul class="footer-links">
+            <li><a href="#layanan">Pengiriman Barang</a></li>
+            <li><a href="#layanan">Cargo dan Ekspedisi</a></li>
+            <li><a href="#layanan">Trucking dan Distribusi</a></li>
+            <li><a href="#layanan">Solusi Logistik Bisnis</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Kontak</div>
+          <ul class="footer-links">
+            <li><a href="https://wa.me/6281277797979" target="_blank" rel="noopener">0812-7779-7979</a></li>
+            <li><a href="mailto:garudalogistik7979@gmail.com">garudalogistik7979@gmail.com</a></li>
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#layanan">Layanan</a></li>
+            <li><a href="#keunggulan">Keunggulan</a></li>
+          </ul>
+        </div>
       </div>
-      <!-- Services -->
-      <div>
-        <div class="footer-col-title">Layanan</div>
-        <ul class="footer-links">
-          <li><a href="#layanan">Pengiriman Barang</a></li>
-          <li><a href="#layanan">Cargo dan Ekspedisi</a></li>
-          <li><a href="#layanan">Trucking dan Distribusi</a></li>
-          <li><a href="#layanan">Solusi Logistik Bisnis</a></li>
-        </ul>
-      </div>
-      <!-- Contact -->
-      <div>
-        <div class="footer-col-title">Kontak</div>
-        <ul class="footer-links">
-          <li><a href="https://wa.me/6281277797979" target="_blank" rel="noopener">0812-7779-7979</a></li>
-          <li><a href="mailto:garudalogistik7979@gmail.com">garudalogistik7979@gmail.com</a></li>
-          <li><a href="#beranda">Beranda</a></li>
-          <li><a href="#layanan">Layanan</a></li>
-          <li><a href="#keunggulan">Keunggulan</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <div class="footer-copy">&copy; 2026 Garuda Logistik. Hak cipta dilindungi.</div>
-      <div class="footer-legal">
-        <a href="#">Kebijakan Privasi</a>
-        <a href="#">Syarat &amp; Ketentuan</a>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Garuda Logistik. Hak cipta dilindungi.</div>
+        <div class="footer-legal">
+          <a href="#">Kebijakan Privasi</a>
+          <a href="#">Syarat &amp; Ketentuan</a>
+        </div>
       </div>
     </div>
   </footer>
 
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('#site-nav');
+
+    toggle?.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    nav?.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('open');
+        toggle?.setAttribute('aria-expanded', 'false');
+      });
+    });
+  </script>
 </body>
 </html>
