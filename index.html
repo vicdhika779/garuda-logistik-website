@@ -4,19 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Garuda Logistik — Solusi Logistik Bisnis Indonesia</title>
-  <meta name="description" content="Garuda Logistik menyediakan pengiriman barang, cargo, trucking, dan distribusi bisnis yang rapi, transparan, dan terpercaya untuk pelanggan di Indonesia.">
+  <meta name="description" content="Garuda Logistik menyediakan pengiriman barang, kargo, trucking, dan distribusi bisnis yang rapi, transparan, dan terpercaya untuk pelanggan di Indonesia.">
   <link rel="icon" type="image/png" href="assets/brand/garuda-logistik-emblem.png">
   <link rel="apple-touch-icon" href="assets/brand/garuda-logistik-emblem.png">
 
   <meta property="og:title" content="Garuda Logistik — Solusi Logistik Bisnis Indonesia">
-  <meta property="og:description" content="Pengiriman barang, cargo, trucking, dan distribusi bisnis yang rapi, transparan, dan terpercaya.">
+  <meta property="og:description" content="Pengiriman barang, kargo, trucking, dan distribusi bisnis yang rapi, transparan, dan terpercaya.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://garudalogistik.com">
   <meta property="og:image" content="https://garudalogistik.com/assets/brand/garuda-logistik-emblem.png">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Garuda Logistik — Solusi Logistik Bisnis Indonesia">
-  <meta name="twitter:description" content="Pengiriman barang, cargo, trucking, dan distribusi bisnis yang rapi, transparan, dan terpercaya.">
+  <meta name="twitter:description" content="Pengiriman barang, kargo, trucking, dan distribusi bisnis yang rapi, transparan, dan terpercaya.">
   <meta name="twitter:image" content="https://garudalogistik.com/assets/brand/garuda-logistik-emblem.png">
 
   <style>
@@ -110,9 +110,9 @@
     .section-title {
       max-width: 760px;
       color: var(--ink);
-      font-size: clamp(2.05rem, 4vw, 3.6rem);
-      line-height: 1.03;
-      letter-spacing: -.055em;
+      font-size: clamp(2rem, 4vw, 3.55rem);
+      line-height: 1.06;
+      letter-spacing: -.045em;
       font-weight: 850;
       text-wrap: balance;
     }
@@ -293,10 +293,10 @@
       margin-top: 1.35rem;
       max-width: 620px;
       color: var(--ink);
-      font-size: clamp(3.05rem, 6.2vw, 6.4rem);
+      font-size: clamp(3rem, 6.2vw, 6.2rem);
       font-weight: 900;
-      line-height: .91;
-      letter-spacing: -.075em;
+      line-height: .95;
+      letter-spacing: -.065em;
       text-wrap: balance;
     }
 
@@ -832,7 +832,11 @@
 
     @media (max-width: 760px) {
       header { top: 10px; }
-      .header-inner { border-radius: 26px; padding: .55rem; }
+      .container,
+      .hero-inner {
+        width: min(100% - 28px, var(--container));
+      }
+      .header-inner { width: calc(100% - 20px); border-radius: 24px; padding: .52rem; }
       .brand-tagline { display: none; }
       .brand-name { font-size: .98rem; }
       .brand-logo { width: 42px; height: 42px; }
@@ -854,15 +858,25 @@
       nav a { justify-content: flex-start; width: 100%; padding: 0 1rem; }
       .btn-header { justify-content: center; }
 
-      .hero { min-height: auto; padding: 8.3rem 0 4.2rem; }
-      .hero h1 { font-size: clamp(2.75rem, 15vw, 4.4rem); }
+      .hero { min-height: auto; padding: 7.7rem 0 3.6rem; }
+      .hero-badge { max-width: 100%; padding: .48rem .72rem; font-size: .68rem; letter-spacing: .08em; }
+      .hero h1 { margin-top: 1.05rem; font-size: clamp(2.45rem, 12.4vw, 3.65rem); line-height: .99; letter-spacing: -.055em; }
+      .hero-desc { margin-top: 1rem; font-size: 1rem; line-height: 1.68; }
+      .btn-primary, .btn-secondary, .btn-cta { min-height: 50px; padding: 0 1rem; }
       .hero-points { grid-template-columns: 1fr; }
       .hero-actions a { width: 100%; }
-      .hero-visual { min-height: 470px; }
-      .hero-card { inset: 52px 0 0; border-radius: 26px; }
-      .hero-img { min-height: 365px; border-radius: 20px; }
-      .status-card { right: 8px; left: 8px; width: auto; bottom: 0; }
-      section { padding: 4.4rem 0; }
+      .hero-visual { min-height: 390px; }
+      .hero-card { inset: 30px 0 34px; border-radius: 24px; padding: .7rem; }
+      .hero-img { min-height: 318px; border-radius: 18px; opacity: .72; }
+      .emblem-stage { width: min(285px, 78%); transform: translate(-50%, -52%); }
+      .status-card { right: 10px; left: 10px; width: auto; bottom: 4px; padding: .85rem; border-radius: 18px; }
+      .status-card small { font-size: .62rem; letter-spacing: .08em; }
+      .status-card p { font-size: .82rem; line-height: 1.45; }
+      section { padding: 4rem 0; }
+      .section-title { font-size: clamp(1.95rem, 9vw, 2.75rem); line-height: 1.08; letter-spacing: -.04em; }
+      .section-sub { font-size: .98rem; line-height: 1.65; }
+      .eyebrow { font-size: .68rem; letter-spacing: .10em; }
+      .eyebrow::before { width: 24px; }
       .section-top { display: block; }
       .mini-note { margin-top: 1rem; }
       .services-grid { grid-template-columns: 1fr; }
@@ -873,6 +887,25 @@
       .footer-inner { grid-template-columns: 1fr; gap: 2rem; }
       .footer-bottom { flex-direction: column; align-items: flex-start; }
       .footer-legal { flex-direction: column; gap: .5rem; }
+    }
+
+    @media (max-width: 430px) {
+      .brand-name { font-size: .92rem; }
+      .brand-logo { width: 38px; height: 38px; }
+      .nav-toggle { width: 40px; height: 40px; }
+      .hero { padding-top: 7.2rem; }
+      .hero h1 { font-size: clamp(2.2rem, 12vw, 3.05rem); }
+      .hero-points { gap: .65rem; }
+      .hero-point { padding: .82rem; font-size: .8rem; }
+      .hero-visual { min-height: 355px; }
+      .hero-img { min-height: 290px; }
+      .emblem-stage { width: min(235px, 72%); }
+      .service-card { min-height: 250px; padding: 1.25rem; }
+      .service-card .service-link { left: 1.25rem; bottom: 1.2rem; }
+      .why-item { grid-template-columns: 1fr; gap: .75rem; }
+      .why-num { width: 40px; height: 40px; }
+      .cta-card { border-radius: 26px; }
+      .footer-inner { gap: 1.7rem; }
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -914,7 +947,7 @@
           <div class="hero-badge"><i></i> Solusi logistik terpercaya</div>
           <h1>Logistik bisnis yang <span>rapi</span>, cepat, dan transparan.</h1>
           <p class="hero-desc">
-            Garuda Logistik membantu bisnis mengirim barang, cargo, dan kebutuhan distribusi dengan koordinasi yang jelas dari penjemputan sampai barang diterima.
+            Garuda Logistik membantu bisnis mengirim barang, kargo, dan kebutuhan distribusi dengan koordinasi jelas dari penjemputan sampai barang diterima.
           </p>
           <div class="hero-actions">
             <a href="https://wa.me/6281277797979" class="btn-primary" target="_blank" rel="noopener" aria-label="Chat Garuda Logistik melalui WhatsApp">
@@ -925,8 +958,8 @@
           </div>
           <div class="hero-points" aria-label="Keunggulan singkat">
             <div class="hero-point"><strong>Door-to-door</strong>Penjemputan sampai tujuan.</div>
-            <div class="hero-point"><strong>Terkoordinasi</strong>Update jelas untuk bisnis.</div>
-            <div class="hero-point"><strong>Fleksibel</strong>Paket, cargo, dan trucking.</div>
+            <div class="hero-point"><strong>Terkoordinasi</strong>Pembaruan status jelas untuk bisnis.</div>
+            <div class="hero-point"><strong>Fleksibel</strong>Paket, kargo, dan trucking.</div>
           </div>
         </div>
 
@@ -939,7 +972,7 @@
           </div>
           <div class="status-card">
             <small>Bisnis berjalan, logistik terkendali</small>
-            <p>Satu mitra untuk kebutuhan pengiriman reguler, cargo besar, dan distribusi harian.</p>
+            <p>Satu mitra untuk kebutuhan pengiriman reguler, kargo besar, dan distribusi harian.</p>
           </div>
         </div>
       </div>
@@ -964,14 +997,14 @@
           </article>
           <article class="service-card">
             <div class="service-icon">🚚</div>
-            <h3>Cargo dan Ekspedisi</h3>
-            <p>Solusi cargo darat, laut, dan udara untuk pengiriman besar, repeat order, atau kebutuhan distribusi lintas wilayah.</p>
+            <h3>Kargo dan Ekspedisi</h3>
+            <p>Solusi kargo darat, laut, dan udara untuk pengiriman besar, pengiriman berulang, atau distribusi lintas wilayah.</p>
             <a class="service-link" href="https://wa.me/6281277797979" target="_blank" rel="noopener">Tanya layanan →</a>
           </article>
           <article class="service-card">
             <div class="service-icon">🛣️</div>
             <h3>Trucking dan Distribusi</h3>
-            <p>Armada untuk distribusi intra-city dan inter-city, cocok untuk stok ulang gudang, toko, dan jaringan pelanggan.</p>
+            <p>Armada untuk distribusi dalam kota dan antar kota, cocok untuk stok ulang gudang, toko, dan jaringan pelanggan.</p>
             <a class="service-link" href="https://wa.me/6281277797979" target="_blank" rel="noopener">Tanya layanan →</a>
           </article>
           <article class="service-card">
@@ -998,7 +1031,7 @@
           <article class="process-card">
             <span>02 / Koordinasi</span>
             <h3>Penjemputan dan pengiriman diatur</h3>
-            <p>Proses dibuat rapi dengan update yang mudah dipahami, sehingga Anda tahu posisi operasional pengiriman.</p>
+            <p>Proses dibuat rapi dengan pembaruan status yang mudah dipahami, sehingga Anda tahu posisi operasional pengiriman.</p>
           </article>
           <article class="process-card">
             <span>03 / Selesai</span>
@@ -1027,14 +1060,14 @@
               <div class="why-num">01</div>
               <div>
                 <h3>Komunikasi Jelas</h3>
-                <p>Update pengiriman disampaikan langsung dan transparan, tanpa jargon teknis yang membingungkan.</p>
+                <p>Pembaruan pengiriman disampaikan langsung dan transparan, tanpa jargon teknis yang membingungkan.</p>
               </div>
             </article>
             <article class="why-item">
               <div class="why-num">02</div>
               <div>
                 <h3>Proses Rapi</h3>
-                <p>Dari penjemputan hingga delivery, setiap langkah dikoordinasikan dengan standar operasional yang konsisten.</p>
+                <p>Dari penjemputan hingga pengantaran, setiap langkah dikoordinasikan dengan standar operasional yang konsisten.</p>
               </div>
             </article>
             <article class="why-item">
@@ -1060,7 +1093,7 @@
       <div class="container">
         <div class="cta-card">
           <h2>Siap membuat logistik bisnis lebih terkendali?</h2>
-          <p>Hubungi Garuda Logistik melalui WhatsApp untuk konsultasi kebutuhan pengiriman, cargo, trucking, dan distribusi bisnis Anda.</p>
+          <p>Hubungi Garuda Logistik melalui WhatsApp untuk konsultasi kebutuhan pengiriman, kargo, trucking, dan distribusi bisnis Anda.</p>
           <a href="https://wa.me/6281277797979" class="btn-cta" target="_blank" rel="noopener">
             <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
             Mulai via WhatsApp
@@ -1077,13 +1110,13 @@
           <img src="assets/brand/garuda-logistik-emblem.png" alt="Garuda Logistik" class="footer-logo">
           <div class="footer-brand-name">Garuda <span>Logistik</span></div>
           <div class="footer-company">PT Garuda Cahaya Nusantara Logistik</div>
-          <p class="footer-desc">Mitra logistik untuk bisnis di Indonesia. Pengiriman barang, cargo, trucking, dan distribusi dengan koordinasi yang jelas.</p>
+          <p class="footer-desc">Mitra logistik untuk bisnis di Indonesia. Pengiriman barang, kargo, trucking, dan distribusi dengan koordinasi yang jelas.</p>
         </div>
         <div>
           <div class="footer-col-title">Layanan</div>
           <ul class="footer-links">
             <li><a href="#layanan">Pengiriman Barang</a></li>
-            <li><a href="#layanan">Cargo dan Ekspedisi</a></li>
+            <li><a href="#layanan">Kargo dan Ekspedisi</a></li>
             <li><a href="#layanan">Trucking dan Distribusi</a></li>
             <li><a href="#layanan">Solusi Logistik Bisnis</a></li>
           </ul>
