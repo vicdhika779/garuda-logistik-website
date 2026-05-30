@@ -487,8 +487,8 @@
 
     .service-card {
       position: relative;
-      min-height: 315px;
-      padding: 1.45rem;
+      min-height: 430px;
+      padding: 1.05rem 1.35rem 4.1rem;
       border: 1px solid rgba(15,23,42,.10);
       border-radius: 26px;
       background: rgba(255,255,255,.72);
@@ -502,23 +502,35 @@
       position: absolute;
       inset: 0 0 auto;
       height: 5px;
+      z-index: 2;
       background: linear-gradient(90deg, var(--gold), var(--red));
       opacity: .92;
     }
 
     .service-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-soft); border-color: rgba(217,164,65,.45); }
 
+    .service-photo {
+      width: 100%;
+      height: 150px;
+      display: block;
+      margin-bottom: 1.05rem;
+      border-radius: 20px;
+      object-fit: cover;
+      box-shadow: 0 16px 34px rgba(15,23,42,.14);
+      filter: saturate(.92) contrast(1.04);
+    }
+
     .service-icon {
-      width: 54px;
-      height: 54px;
+      width: 50px;
+      height: 50px;
       display: grid;
       place-items: center;
-      margin-bottom: 1.5rem;
-      border-radius: 18px;
+      margin-bottom: 1rem;
+      border-radius: 17px;
       color: var(--ink);
       background: linear-gradient(145deg, #fff6db, #f1d07b);
       box-shadow: var(--shadow-gold);
-      font-size: 1.28rem;
+      font-size: 1.18rem;
     }
 
     .service-card h3 {
@@ -880,7 +892,8 @@
       .section-top { display: block; }
       .mini-note { margin-top: 1rem; }
       .services-grid { grid-template-columns: 1fr; }
-      .service-card { min-height: 265px; }
+      .service-card { min-height: 415px; }
+      .service-photo { height: 180px; }
       .why-photo { min-height: 330px; }
       .why-item { grid-template-columns: 44px 1fr; padding: 1rem; }
       .why-num { width: 42px; height: 42px; border-radius: 14px; }
@@ -900,8 +913,9 @@
       .hero-visual { min-height: 355px; }
       .hero-img { min-height: 290px; }
       .emblem-stage { width: min(235px, 72%); }
-      .service-card { min-height: 250px; padding: 1.25rem; }
-      .service-card .service-link { left: 1.25rem; bottom: 1.2rem; }
+      .service-card { min-height: 405px; padding: 1rem 1rem 3.9rem; }
+      .service-photo { height: 165px; border-radius: 18px; }
+      .service-card .service-link { left: 1rem; bottom: 1.15rem; }
       .why-item { grid-template-columns: 1fr; gap: .75rem; }
       .why-num { width: 40px; height: 40px; }
       .cta-card { border-radius: 26px; }
@@ -990,24 +1004,28 @@
 
         <div class="services-grid">
           <article class="service-card">
+            <img src="assets/images/service-pengiriman-barang.jpg" alt="Paket dan pallet barang diproses rapi di gudang logistik" class="service-photo" loading="lazy">
             <div class="service-icon">📦</div>
             <h3>Pengiriman Barang</h3>
             <p>Pengiriman paket dan barang untuk kebutuhan pribadi maupun bisnis, dengan koordinasi status yang mudah dipahami.</p>
             <a class="service-link" href="https://wa.me/6281277797979" target="_blank" rel="noopener">Tanya layanan →</a>
           </article>
           <article class="service-card">
+            <img src="assets/images/service-kargo-ekspedisi.jpg" alt="Truk kargo siap diberangkatkan dari area distribusi" class="service-photo" loading="lazy">
             <div class="service-icon">🚚</div>
             <h3>Kargo dan Ekspedisi</h3>
             <p>Solusi kargo darat, laut, dan udara untuk pengiriman besar, pengiriman berulang, atau distribusi lintas wilayah.</p>
             <a class="service-link" href="https://wa.me/6281277797979" target="_blank" rel="noopener">Tanya layanan →</a>
           </article>
           <article class="service-card">
+            <img src="assets/images/service-trucking-distribusi.jpg" alt="Koordinator logistik memantau rute distribusi melalui tablet" class="service-photo" loading="lazy">
             <div class="service-icon">🛣️</div>
             <h3>Trucking dan Distribusi</h3>
             <p>Armada untuk distribusi dalam kota dan antar kota, cocok untuk stok ulang gudang, toko, dan jaringan pelanggan.</p>
             <a class="service-link" href="https://wa.me/6281277797979" target="_blank" rel="noopener">Tanya layanan →</a>
           </article>
           <article class="service-card">
+            <img src="assets/images/service-solusi-bisnis.jpg" alt="Tim logistik meninjau dokumen dan kebutuhan pengiriman bisnis" class="service-photo" loading="lazy">
             <div class="service-icon">🤝</div>
             <h3>Solusi Logistik Bisnis</h3>
             <p>Pendampingan operasional logistik, mulai dari perencanaan rute, kebutuhan armada, sampai eksekusi pengiriman rutin.</p>
