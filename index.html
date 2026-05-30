@@ -665,10 +665,23 @@
     }
 
     .process-card {
-      padding: 1.4rem;
+      padding: 1rem 1rem 1.35rem;
       border-radius: 24px;
       border: 1px solid rgba(15,23,42,.10);
       background: rgba(255,255,255,.58);
+      box-shadow: 0 14px 38px rgba(15,23,42,.05);
+      overflow: hidden;
+    }
+
+    .process-photo {
+      width: 100%;
+      height: 170px;
+      display: block;
+      margin-bottom: 1.05rem;
+      border-radius: 18px;
+      object-fit: cover;
+      box-shadow: 0 14px 30px rgba(15,23,42,.12);
+      filter: saturate(.92) contrast(1.04);
     }
 
     .process-card span {
@@ -840,6 +853,7 @@
       .why-grid { grid-template-columns: 1fr; }
       .why-photo { min-height: 420px; }
       .process-grid { grid-template-columns: 1fr; }
+      .process-photo { height: 220px; }
     }
 
     @media (max-width: 760px) {
@@ -915,6 +929,7 @@
       .emblem-stage { width: min(235px, 72%); }
       .service-card { min-height: 405px; padding: 1rem 1rem 3.9rem; }
       .service-photo { height: 165px; border-radius: 18px; }
+      .process-photo { height: 165px; border-radius: 18px; }
       .service-card .service-link { left: 1rem; bottom: 1.15rem; }
       .why-item { grid-template-columns: 1fr; gap: .75rem; }
       .why-num { width: 40px; height: 40px; }
@@ -1042,16 +1057,19 @@
         <p class="section-sub">Kami menjaga komunikasi tetap jelas, mulai dari permintaan layanan sampai pengiriman selesai.</p>
         <div class="process-grid">
           <article class="process-card">
+            <img src="assets/images/process-konsultasi.jpg" alt="Konsultasi kebutuhan pengiriman dengan tim Garuda Logistik" class="process-photo" loading="lazy">
             <span>01 / Konsultasi</span>
             <h3>Ceritakan kebutuhan kiriman Anda</h3>
             <p>Tim kami mencatat jenis barang, tujuan, jadwal, dan kebutuhan armada agar solusi yang diberikan sesuai.</p>
           </article>
           <article class="process-card">
+            <img src="assets/images/process-koordinasi.jpg" alt="Koordinasi penjemputan barang di area gudang dan loading bay" class="process-photo" loading="lazy">
             <span>02 / Koordinasi</span>
             <h3>Penjemputan dan pengiriman diatur</h3>
             <p>Proses dibuat rapi dengan pembaruan status yang mudah dipahami, sehingga Anda tahu posisi operasional pengiriman.</p>
           </article>
           <article class="process-card">
+            <img src="assets/images/process-selesai.jpg" alt="Konfirmasi barang diterima dan pengiriman terdokumentasi" class="process-photo" loading="lazy">
             <span>03 / Selesai</span>
             <h3>Barang diterima dan terdokumentasi</h3>
             <p>Pengiriman diselesaikan dengan konfirmasi penerimaan, lalu bisa dilanjutkan untuk kebutuhan rutin berikutnya.</p>
